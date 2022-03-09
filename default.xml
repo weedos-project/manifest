@@ -1100,7 +1100,7 @@
 
   <!-- Custom repos -->
   <include name="snippets/remove.xml" />
-  <include name="snippets/arcana.xml" />
+  <include name="snippets/weed.xml" />
   <include name="snippets/lineage.xml" />
 
 </manifest>

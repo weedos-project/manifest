@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <remote  name="aex"
+           fetch="https://github.com/AospExtended"
+           revision="refs/heads/12.x" />
+
+  <remote  name="weedos"
+           fetch="https://github.com/AospExtended"
+           revision="refs/heads/12" />
+           
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           revision="refs/heads/arrow-12.0" />
+           
+  <remote  name="arcana"
+           fetch="https://github.com/projectarcana-aosp"
+           revision="refs/heads/12.x" />
+           
+  <remote  name="iu-lab"
+           fetch="https://gitlab.com/dlwlrma123"
+           revision="refs/heads/S" />
+           
+  <remote  name="aex-lab"
+           fetch="https://gitlab.com/AospExtended"
+           revision="refs/heads/12.x" />
+
+  <remote  name="aex-devices"
+           fetch="https://github.com/AospExtended-Devices" 
+           revision="refs/heads/12.x" />
+
+  <remote  name="lineage"
+           fetch="https://github.com/LineageOS"
+           revision="refs/heads/lineage-18.1" />
+
+  <remote name="pixel-gitlab-self-hosted"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="twelve" />
+          
+  <remote name="crdroid-gitlab" fetch="https://gitlab.com/crdroidandroid" />
+        
+  <!-- Project WeedOS -->
+  <project path="manifest" name="manifest" remote="weedos" />
+  <project path="art" name="platform_art" groups="pdk" remote="weedos" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="weedos" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="weedos" />
+  <project path="build/make" name="platform_build" groups="pdk" remote="weedos" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed" remote="weedos" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="weedos" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="weedos" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="weedos" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="weedos" revision="12.x-legacy-um" />
+  <project path="external/colorkt" name="platform_external_colorkt" remote="weedos" />
+  <project path="external/themelib" name="platform_external_themelib" remote="aex" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="aex" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" groups="pdk" remote="weedos" />
+  <project path="external/sqlite" name="external_sqlite" groups="pdk" remote="weedos" />
+  <project path="external/zlib-ng" name="android_external_zlib-ng" remote="arcana" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="weedos" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="weedos" />
+  <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="weedos" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="weedos" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="weedos" />
+  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="weedos" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="weedos" />
+  <project path="hardware/aosp/interfaces" name="platform_hardware_aosp_interfaces" groups="pdk" remote="aex" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="weedos" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="weedos" />
+  <project path="libcore" name="platform_libcore" groups="pdk" remote="weedos" />  
+  <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-fs" remote="weedos" />
+  <project path="packages/apps/Camera2" name="platform_packages_apps_Camera2" groups="pdk-fs" remote="aex" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" groups="pdk-fs" remote="weedos" />
+  <project path="packages/apps/DeskClock" name="platform_packages_apps_DeskClock" groups="pdk-fs" remote="aex" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" groups="pdk-fs" remote="weedos" />
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" groups="pdk-fs" remote="weedos" />
+  <project path="packages/apps/Extensions" name="platform_packages_apps_Extensions" remote="weedos" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" groups="pdk-fs" remote="arcana" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" groups="pdk-fs" remote="weedos" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs" remote="weedos" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="weedos" />
+  <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="weedos" />
+  <project path="packages/apps/SimpleDeviceConfig" name="platform_packages_apps_SimpleDeviceConfig" groups="pdk-fs" remote="aex" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" groups="pdk-fs" remote="weedos" />
+  <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="weedos" />
+  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="pdk-fs" remote="weedos" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" groups="pdk-fs" remote="weedos" />
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" groups="pdk-fs" remote="weedos" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" groups="pdk-fs" remote="weedos" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" groups="pdk-fs" remote="weedos" />
+  <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" groups="pdk-fs" remote="weedos" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" groups="pdk-fs" remote="weedos" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-fs" remote="weedos" />
+  <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="weedos" />
+  <project path="prebuilts/extract-tools" name="platform_prebuilts_extract-tools" remote="aex" />
+  <project path="prebuilts/tools-aosp" name="platform_prebuilts_tools-aosp" remote="aex" />
+  <project path="system/bpf" name="platform_system_bpf" groups="pdk" remote="weedos" />
+  <project path="system/bt" name="platform_system_bt" groups="pdk" remote="weedos" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="weedos" />
+  <project path="system/logging" name="platform_system_logging" groups="pdk" remote="weedos" />
+  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" groups="pdk" remote="weedos" />
+  <project path="system/netd" name="platform_system_netd" groups="pdk" remote="weedos" />
+  <project path="system/security" name="platform_system_security" groups="pdk" remote="weedos" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="weedos" />
+  <project path="system/vold" name="platform_system_vold" groups="pdk" remote="weedos" />
+  <project path="system/tools/mkbootimg" name="platform_system_tools_mkbootimg" groups="pdk" remote="weedos" />
+  <project path="system/update_engine" name="platform_system_update_engine" groups="pdk" remote="weedos" />
+  <project path="tools/extract-utils" name="platform_tools_extract-utils" remote="aex" />
+  <project path="vendor/aosp" name="platform_vendor_aosp" remote="weedos" />
+  <project path="packages/overlays/Themes" name="platform_packages_overlays_Themes" remote="weedos" />
+  <project path="vendor/support" name="platform_vendor_support" remote="weedos" />
+  <project path="vendor/qcom/opensource/power" name="platform_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="weedos"  />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="weedos" />
+  <project path="vendor/lawnchair" name="vendor_lawnchair" remote="weedos" />
+  <project path="packages/apps/RepainterServicePriv" name="android_packages_apps_RepainterServicePriv" remote="weedos" />
+  <project path="external/scudo" name="android_external_scudo" remote="weedos" />
+  <project path="external/fastrpc" name="android_external_fastrpc" remote="weedos" />
+  <project path="external/giflib" name="external_giflib" remote="weedos" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="weedos" />
+  <project path="external/lz4" name="external_lz4" remote="weedos" />
+  <project path="system/media" name="platform_system_media" remote="weedos" />
+  <project path="packages/apps/GmsCompat" name="platform_packages_apps_GmsCompat" remote="weedos" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="weedos" />
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="weedos" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="weedos" />
+
+  <!--gapps-->
+  <project path="vendor/gapps" name="vendor_gapps" remote="iu-lab" clone-depth="1" />
+  
+  <!-- Clang 14 Version 14.0.2 -->
+  <project path="prebuilts/clang/host/linux-x86/clang-r445002" name="android_prebuilts_clang_host_linux-x86_clang-r445002" remote="crdroid-gitlab" revision="refs/heads/12.0" clone-depth="1" />
+
+  <!-- Proton -->
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="kdrag0n/proton-clang" remote="github" revision="master" clone-depth="1" />
+  
+  <!-- AOSP -->
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" revision="refs/tags/android-11.0.0_r46" />
+  <project path="external/exfatprogs" name="platform/external/exfatprogs"  groups="pdk" revision="refs/heads/master" />
+</manifest>

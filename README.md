@@ -1,61 +1,18 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/projectarcana-aosp/manifest/12.x/banner.png" > 
-</p>
-
-# Project Arcana #
+# WEED OS  #
 
 ### Sync ###
 
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/projectarcana-aosp/manifest -b 12.x
+repo init git://github.com/weedos-project/manifest.git -b 12
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
-### for less storage and bandwidth consumption ### 
 
-```bash
 
-# Initialize local repository  (thanks to apon77 for repo init script)
-repo init --depth=1 --no-repo-verify -u https://github.com/projectarcana-aosp/manifest -b 12.x -g default,-mips,-darwin,-notdefault
-
-# Sync
-repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -jX
-```
-
-### Device bringup ###
-
-```bash
-
-# first, inherit Project Arcana common.mk
-$(call inherit-product, vendor/aosp/common.mk)
-
-# do aosp bringup and use these flags to adapt
-
-# maintainer flag
-ARCANA_MAINTAINER := maintainer
-
-# pixel build flag, if not define build type is vanilla
-WITH_GAPPS := true/false
-
-# only applicaple to pixel builds (WITH_GAPPS,) default is lawnchair for vanilla build
-PREBUILT_LAWNCHAIR := true/false
-
-# disable/enable blur support, default is false
-TARGET_SUPPORTS_BLUR := true/false
-
-# prebuilt graphene camera flag, default is false
-TARGET_BUILD_GRAPHENEOS_CAMERA := true/false
-
-# whether to copy apns-conf.xml to system
-# (for devices having issues with TelephonyProvider: FileNotFoundException)
-# default is false (product)
-COPY_APN_SYSTEM := true/false
-
-```
 
 ### Build ###
 
@@ -73,6 +30,7 @@ $ make bacon -jX
 
 Credits
 -------
+* [**Project WEEDOS**](https://github.com/projectWEEDOS-aosp)
 * [**AOSPExtended**](https://github.com/AospExtended)
 * [**ProtonAOSP**](https://github.com/ProtonAOSP)
 * [**GrapheneOS**](https://github.com/GrapheneOS)
@@ -89,4 +47,4 @@ Credits
 * [**WaveOS**](https://github.com/)
 * [**Descendant-XI**](https://github.com/Descendant-XI)
 
-And the list goes on....
+
