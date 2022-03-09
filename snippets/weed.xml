@@ -15,7 +15,7 @@
            revision="refs/heads/12.x" />
 
   <remote  name="weedos"
-           fetch="https://github.com/AospExtended"
+           fetch="https://github.com/weedos-project/"
            revision="refs/heads/12" />
            
   <remote  name="arrow"
