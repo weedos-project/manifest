@@ -5,7 +5,7 @@
 ```bash
 
 # Initialize local repository
-repo init git://github.com/weedos-project/manifest.git -b 12
+repo init -u https://github.com/weedos-project/manifest -b 12
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
@@ -30,7 +30,7 @@ $ make bacon -jX
 
 Credits
 -------
-* [**Project WEEDOS**](https://github.com/projectWEEDOS-aosp)
+* [**Project Arcana**](https://github.com/projectarcana-aosp)
 * [**AOSPExtended**](https://github.com/AospExtended)
 * [**ProtonAOSP**](https://github.com/ProtonAOSP)
 * [**GrapheneOS**](https://github.com/GrapheneOS)
