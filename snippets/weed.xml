@@ -139,7 +139,7 @@
   <project path="system/media" name="platform_system_media" remote="weedos" />
   <project path="packages/apps/GmsCompat" name="platform_packages_apps_GmsCompat" remote="weedos" />
   <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
-  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="weedos" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="arcana" />
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="weedos" />
   <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="weedos" />
 
