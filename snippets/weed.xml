@@ -15,7 +15,7 @@
            revision="refs/heads/12.x" />
 
   <remote  name="weedos"
-           fetch="git@github.com:weedos-project"
+           fetch="ssh://git@github.com/weedos-project"
            revision="refs/heads/12" />
            
   <remote  name="arrow"
