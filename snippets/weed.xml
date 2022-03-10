@@ -115,6 +115,7 @@
   <project path="prebuilts/tools-aosp" name="platform_prebuilts_tools-aosp" remote="aex" />
   <project path="system/bpf" name="platform_system_bpf" groups="pdk" remote="weedos" />
   <project path="system/bt" name="platform_system_bt" groups="pdk" remote="weedos" />
+  <project path="system/libhwbinder" name="platform/system/libhwbinder" groups="pdk" remote="weedos"/>
   <project path="system/core" name="platform_system_core" groups="pdk" remote="weedos" />
   <project path="system/logging" name="platform_system_logging" groups="pdk" remote="weedos" />
   <project path="system/memory/lmkd" name="platform_system_memory_lmkd" groups="pdk" remote="weedos" />
