@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- crDroid additions -->
+
+
+  <project path="art" name="weedos-project/platform_art" remote="weedos" />
+
+  <project path="bionic" name="weedos-project/platform_bionic" remote="weedos" />
+
+  <project path="bootable/recovery" name="weedos-project/platform_bootable_recovery" remote="weedos" />
+
+  <project path="build/make" name="weedos-project/platform_build" remote="weedos" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="weedos-project/platform_build_soong" remote="weedos" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="device/lineage/sepolicy" name="weedos-project/platform_device_weedos_sepolicy" remote="weedos" />
+
+  <project path="external/arm-optimized-routines" name="weedos-project/external_arm-optimized-routines" remote="weedos" />
+  <project path="external/colorkt" name="weedos-project/external_colorkt" remote="weedos" />
+  <project path="external/faceunlock" name="crdroidandroid/android_external_faceunlock" remote="crdroid-gitlab" />
+  <project path="external/freetype" name="weedos-project/external_freetype" remote="weedos" />
+  <project path="external/giflib" name="weedos-project/external_giflib" remote="weedos" />
+  <project path="external/harfbuzz_ng" name="weedos-project/external_harfbuzz_ng" remote="weedos" />
+  <project path="external/jemalloc_new" name="crdroidandroid/android_external_jemalloc-new" remote="weedos" />
+  <project path="external/libjpeg-turbo" name="weedos-project/external_libjpeg-turbo" remote="weedos" />
+  <project path="external/OpenCSD" name="weedos-project/external_OpenCSD" remote="weedos" />
+  <project path="external/setupcompat" name="weedos-project/external_setupcompat" remote="weedos" />
+  <project path="external/sqlite" name="weedos-project/external_sqlite" remote="weedos" />
+  <project path="external/themelib" name="weedos-project/external_themelib" remote="weedos" />
+  <project path="external/libvpx" name="weedos-project/external_libvpx" remote="weedos" />
+  <project path="external/zlib" name="weedos-project/external_zlib" remote="weedos" />
+
+  <project path="frameworks/av" name="weedos-project/platform_frameworks_av" remote="weedos" />
+  <project path="frameworks/base" name="weedos-project/platform_frameworks_base" remote="weedos" />
+  <project path="frameworks/libs/net" name="weedos-project/android_frameworks_libs_net" remote="weedos" />
+  <project path="frameworks/libs/systemui" name="weedos-project/platform_frameworks_libs_systemui" remote="weedos" />
+  <project path="frameworks/native" name="weedos-project/platform_frameworks_native" remote="weedos" />
+  <project path="frameworks/opt/net/ims" name="weedos-project/android_frameworks_opt_net_ims" remote="weedos" />
+  <project path="frameworks/opt/telephony" name="weedos-project/frameworks_opt_telephony" remote="weedos" />
+
+  <project path="hardware/interfaces" name="weedos-project/platform_hardware_interfaces" remote="weedos" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="crdroidandroid/android_hardware_qcom_audio" revision="12.1-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" revision="12.1-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="crdroidandroid/android_hardware_qcom_media" revision="12.1-caf-sm8150" />
+  <project path="hardware/qcom-caf/wlan" name="crdroidandroid/android_hardware_qcom_wlan" revision="12.1-caf" />
+
+  <project path="libcore" name="weedos-project/platform_libcore" remote="weedos" />
+
+  <project path="lineage-sdk" name="weedos-project/lineage-sdk" remote="weedos" />
+
+  <project path="packages/apps/AudioFX" name="weedos-project/packages_apps_AudioFX" remote="weedos" />
+  <project path="packages/apps/Bluetooth" name="weedos-project/platform_packages_apps_Bluetooth" remote="weedos" />
+  <project path="packages/apps/Contacts" name="weedos-project/platform_packages_apps_Contacts" remote="weedos" />
+  <project path="packages/apps/WeedSettings" name="weedos-project/packages_apps_weedsettings" remote="weedos" />
+  <project path="packages/apps/DeskClock" name="weedos-project/packages_apps_DeskClock" remote="weedos" />
+  <project path="packages/apps/Dialer" name="weedos-project/platform_packages_apps_Dialer" remote="weedos" />
+  <project path="packages/apps/Etar" name="weedos-project/packages_apps_Etar" remote="weedos" />
+  <project path="packages/apps/ExactCalculator" name="weedos-project/packages_apps_ExactCalculator" remote="weedos" />
+  <project path="packages/apps/FaceUnlockService" name="crdroidandroid/android_packages_apps_FaceUnlockService" remote="crdroid" />
+  <project path="packages/apps/GameSpace" name="weedos-project/packages_apps_GameSpace" remote="weedos" />
+  <project path="packages/apps/Launcher3" name="weedos-project/platform_packages_apps_Launcher3" remote="weedos" />
+  <project path="packages/apps/LineageParts" name="weedos-project/packages_apps_LineageParts" remote="weedos" />
+  <project path="packages/apps/Matlog" name="weedos-project/packages_apps_Matlog" remote="weedos" />
+  <project path="packages/apps/Messaging" name="weedos-project/platform_packages_apps_Messaging" remote="weedos" />
+  <project path="packages/apps/Nfc" name="weedos-project/android_packages_apps_Nfc" remote="weedos" />
+  <project path="packages/apps/Profiles" name="weedos-project/packages_apps_Profiles" remote="weedos" />
+  <project path="packages/apps/Settings" name="weedos-project/platform_packages_apps_Settings" remote="weedos" />
+  <project path="packages/apps/SetupWizard" name="weedos-project/packages_apps_SetupWizard" remote="weedos" />
+  <project path="packages/apps/SimpleDeviceConfig" name="weedos-project/packages_apps_SimpleDeviceConfig" remote="weedos" />
+  <project path="packages/apps/ThemePicker" name="weedos-project/platform_packages_apps_ThemePicker" remote="weedos" />
+  <project path="packages/apps/Updater" name="weedos-project/packages_apps_Updater" remote="weedos" />
+  <project path="packages/apps/WallpaperPicker2" name="weedos-project/packages_apps_WallpaperPicker2" remote="weedos" />
+  <project path="packages/inputmethods/LatinIME" name="crdroidandroid/android_packages_inputmethods_LatinIME" remote="crdroid" />
+  <project path="packages/modules/Connectivity" name="weedos-project/platform_packages_modules_Connectivity" remote="weedos" />
+  <project path="packages/modules/Permission" name="weedos-project/platform_packages_modules_Permission" remote="weedos" />
+  <project path="packages/modules/Wifi" name="weedos-project/platform_packages_modules_Wifi" remote="weedos" />
+  <project path="packages/services/Telecomm" name="weedos-project/platform_packages_services_Telecomm" remote="weedos" />
+  <project path="packages/services/Telephony" name="weedos-project/platform_packages_services_Telephony" remote="weedos" />
+
+  <project path="prebuilts/abi-dumps/ndk" name="weedos-project/prebuilts_abi-dumps_ndk" remote="weedos" />
+  <project path="prebuilts/abi-dumps/vndk" name="weedos-project/prebuilts_abi-dumps_vndk" remote="weedos" />
+  <project path="prebuilts/build-tools" name="crdroidandroid/android_prebuilts_build-tools" clone-depth="1" remote="crdroid" />
+  <!-- Clang 14 version 14.0.2 -->
+  <project path="prebuilts/clang/host/linux-x86/clang-latest" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r445002" remote="crdroid-gitlab" />
+
+  <project path="system/bt" name="weedos-project/platform_system_bt" remote="weedos" />
+  <project path="system/core" name="weedos-project/platform_system_core" remote="weedos" />
+  <project path="system/libhwbinder" name="weedos-project/platform_system_libhwbinder" remote="weedos" />
+  <project path="system/memory/lmkd" name="weedos-project/platform_system_memory_lmkd" remote="weedos" />
+  <project path="system/sepolicy" name="weedos-project/platform_system_sepolicy" remote="weedos" />
+  <project path="system/update_engine" name="weedos-project/platform_system_update_engine" remote="weedos" />
+  <project path="system/vold" name="weedos-project/platform_system_vold" remote="weedos" />
+
+  <project path="vendor/addons" name="weedos-project/vendor_addons" remote="weedos" />
+  <project path="vendor/lineage" name="weedos-project/platform_vendor_weed" remote="weedos" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="crdroidandroid/android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="crdroid" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="crdroidandroid/android_vendor_qcom_opensource_system_bt" remote="crdroid" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="crdroidandroid/android_vendor_qcom_opensource_healthd-ext" remote="crdroid" />
+</manifest>
