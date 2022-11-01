@@ -81,6 +81,7 @@
   <project path="external/tinycompress" name="weedos-project/external_tinycompress" remote="weedos" />\
   <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc-qpr3" />
   <project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="github" revision="sc-qpr3" />
+  <project path="external/AndroidSystemBlur" name="weedos-project/AndroidSystemBlur" remote="weedos" revision="main" />
 
   
   <project path="frameworks/av" name="weedos-project/platform_frameworks_av" remote="weedos" />
