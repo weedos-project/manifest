@@ -115,6 +115,8 @@
   <project path="packages/modules/Connectivity" name="weedos-project/platform_packages_modules_Connectivity" remote="weedos" />
   <project path="packages/modules/Permission" name="weedos-project/platform_packages_modules_Permission" remote="weedos" />
   <project path="packages/modules/Wifi" name="weedos-project/platform_packages_modules_Wifi" remote="weedos" />
+  <project path="packages/modules/Bluetooth" name="weedos-project/platform_packages_modules_Bluetooth" remote="weedos" />
+  <project path="packages/modules/adb" name="weedos-project/platform_packages_modules_adb" remote="weedos" />
   <project path="packages/services/Telecomm" name="weedos-project/platform_packages_services_Telecomm" remote="weedos" />
   <project path="packages/services/Telephony" name="weedos-project/platform_packages_services_Telephony" remote="weedos" />
 
@@ -137,6 +139,7 @@
   <project path="system/sepolicy" name="weedos-project/platform_system_sepolicy" remote="weedos" />
   <project path="system/update_engine" name="weedos-project/platform_system_update_engine" remote="weedos" />
   <project path="system/vold" name="weedos-project/platform_system_vold" remote="weedos" />
+  <project path="system/security" name="weedos-project/platform_system_security" remote="weedos" />
 
 
   <project path="vendor/weedos" name="weedos-project/platform_vendor_weed" remote="weedos" />
