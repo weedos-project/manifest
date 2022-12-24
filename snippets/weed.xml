@@ -78,7 +78,8 @@
   <project path="external/libvpx" name="weedos-project/external_libvpx" remote="weedos" />
   <project path="external/zlib" name="weedos-project/external_zlib" remote="weedos" />
   <project path="external/tinyxml" name="weedos-project/platform_external_tinyxml" remote="weedos" />
-  <project path="external/tinycompress" name="weedos-project/external_tinycompress" remote="weedos" />\
+  <project path="external/tinycompress" name="weedos-project/external_tinycompress" remote="weedos" />
+    <project path="external/faceunlock" name="weedos-project/external_faceunlock" remote="weedos" />
   <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc-qpr3" />
   <project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="github" revision="sc-qpr3" />
   <project path="external/AndroidSystemBlur" name="weedos-project/AndroidSystemBlur" remote="weedos" revision="main" />
@@ -112,6 +113,7 @@
   <project path="packages/apps/Settings" name="weedos-project/platform_packages_apps_Settings" remote="weedos" />
   <project path="packages/apps/ThemePicker" name="weedos-project/platform_packages_apps_ThemePicker" remote="weedos" />
   <project path="packages/apps/WallpaperPicker2" name="weedos-project/packages_apps_WallpaperPicker2" remote="weedos" />
+  <project path="packages/apps/FaceUnlockService" name="weedos-project/packages_apps_FaceUnlockService" remote="weedos" />
   <project path="packages/modules/Connectivity" name="weedos-project/platform_packages_modules_Connectivity" remote="weedos" />
   <project path="packages/modules/Permission" name="weedos-project/platform_packages_modules_Permission" remote="weedos" />
   <project path="packages/modules/Wifi" name="weedos-project/platform_packages_modules_Wifi" remote="weedos" />
