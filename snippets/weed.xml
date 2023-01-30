@@ -119,6 +119,7 @@
   <project path="packages/modules/Wifi" name="weedos-project/platform_packages_modules_Wifi" remote="weedos" />
   <project path="packages/modules/Bluetooth" name="weedos-project/platform_packages_modules_Bluetooth" remote="weedos" />
   <project path="packages/modules/adb" name="weedos-project/platform_packages_modules_adb" remote="weedos" />
+    <project path="packages/modules/common" name="weedos-project/platform_packages_modules_common" remote="weedos" />
   <project path="packages/services/Telecomm" name="weedos-project/platform_packages_services_Telecomm" remote="weedos" />
   <project path="packages/services/Telephony" name="weedos-project/platform_packages_services_Telephony" remote="weedos" />
 
