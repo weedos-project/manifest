@@ -125,6 +125,7 @@
 
  <project path="packages/providers/DownloadProvider" name="weedos-project/packages_providers_DownloadProvider" remote="weedos" />
   <project path="packages/providers/MediaProvider" name="weedos-project/packages_providers_MediaProvider" remote="weedos" />
+    <project path="packages/resources/devicesettings" name="weedos-project/platform_packages_resources_devicesettings" remote="weedos" />
 
   <project path="prebuilts/abi-dumps/ndk" name="weedos-project/prebuilts_abi-dumps_ndk" remote="weedos" />
   <project path="prebuilts/abi-dumps/vndk" name="weedos-project/prebuilts_abi-dumps_vndk" remote="weedos" />
