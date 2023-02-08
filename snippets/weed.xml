@@ -27,7 +27,7 @@
            fetch="https://github.com/"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/tobacco" />
+           revision="refs/heads/tortilla" />
            
     <remote  name="weedos"
            fetch="ssh://git@github.com/"
@@ -36,7 +36,7 @@
            revision="refs/heads/13" />  
   <remote  name="tequila-gitlab"
            fetch="https://gitlab.com/tequilaOS"
-           revision="refs/heads/tobacco" />
+           revision="refs/heads/tortilla" />
 
   <!-- WeedOS additions -->
 
