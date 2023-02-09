@@ -9,7 +9,9 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com" />
 
-
+ <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="https://android-review.googlesource.com/" />
 
   <remote  name="crdroid"
            fetch="https://github.com/"
@@ -83,7 +85,7 @@
   <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc-qpr3" />
   <project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="github" revision="sc-qpr3" />
   <project path="external/AndroidSystemBlur" name="weedos-project/AndroidSystemBlur" remote="weedos" revision="main" />
-
+  <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
   
   <project path="frameworks/av" name="weedos-project/platform_frameworks_av" remote="weedos" />
   <project path="frameworks/base" name="weedos-project/platform_frameworks_base" remote="weedos" />
@@ -133,6 +135,7 @@
   <project path="prebuilts/build-tools" name="weedos-project/android_prebuilts_build-tools" clone-depth="1" remote="weedos" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="tequilaOS/platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="tequila" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="tequilaOS/platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="tequila" />
+
  
  
   <project path="system/core" name="weedos-project/platform_system_core" remote="weedos" />
