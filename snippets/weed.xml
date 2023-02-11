@@ -36,9 +36,14 @@
            sync-c="true"
            sync-j="4"
            revision="refs/heads/13" />  
+           
   <remote  name="tequila-gitlab"
            fetch="https://gitlab.com/tequilaOS"
            revision="refs/heads/tortilla" />
+           
+             <remote  name="weedos-gitlab"
+           fetch="https://gitlab.com/weedos"
+           revision="refs/heads/13" />
 
   <!-- WeedOS additions -->
 
@@ -81,7 +86,10 @@
   <project path="external/zlib" name="weedos-project/external_zlib" remote="weedos" />
   <project path="external/tinyxml" name="weedos-project/platform_external_tinyxml" remote="weedos" />
   <project path="external/tinycompress" name="weedos-project/external_tinycompress" remote="weedos" />
-    <project path="external/faceunlock" name="weedos-project/external_faceunlock" remote="weedos" />
+  <project path="external/faceunlock" name="weedos-project/external_faceunlock" remote="weedos" />
+  <project path="external/mksh " name="weedos-project/platform_external_mksh" remote="weedos" />
+  <project path="external/e2fsprogs" name="weedos-project/platform_external_e2fsprogs" remote="weedos" />
+  <project path="external/gptfdisk" name="weedos-project/platform_external_gptfdisk" remote="weedos" />
   <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc-qpr3" />
   <project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="github" revision="sc-qpr3" />
   <project path="external/AndroidSystemBlur" name="weedos-project/AndroidSystemBlur" remote="weedos" revision="main" />
@@ -150,7 +158,7 @@
 
 
   <project path="vendor/weedos" name="weedos-project/platform_vendor_weed" remote="weedos" />
-    <project path="vendor/google/gms" name="platform_vendor_google_gms" remote="tequila-gitlab" />
+    <project path="vendor/google/gms" name="platform_vendor_google_gms" remote="weedos-gitlab" />
   <project path="vendor/google/pixel" name="platform_vendor_google_pixel" remote="tequila-gitlab" />
   <project path="vendor/qcom/opensource/healthd-ext" name="weedos-project/vendor_qcom_opensource_healthd-ext" remote="weedos" />
 </manifest>

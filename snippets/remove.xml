@@ -86,6 +86,9 @@
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/libvpx" />
   <remove-project name="platform/external/zlib" />
+  <remove-project name="platform/external/mksh" />
+  <remove-project name="platform/external/e2fsprogs" />
+  <remove-project name="platform/external/gptfdisk" />
 
   <!-- frameworks -->
   <remove-project name="platform/frameworks/av" />
