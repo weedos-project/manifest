@@ -158,7 +158,7 @@
 
 
   <project path="vendor/weedos" name="weedos-project/platform_vendor_weed" remote="weedos" />
-    <project path="vendor/google/gms" name="platform_vendor_google_gms" remote="weedos-gitlab" />
+    <project path="vendor/google/gms" name="platform_vendor_gms" remote="weedos-gitlab" />
   <project path="vendor/google/pixel" name="platform_vendor_google_pixel" remote="tequila-gitlab" />
   <project path="vendor/qcom/opensource/healthd-ext" name="weedos-project/vendor_qcom_opensource_healthd-ext" remote="weedos" />
 </manifest>
