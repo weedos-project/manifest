@@ -1,14 +1,21 @@
 # WEED OS A13 #
 
+<p align="center">
+<img src="https://github.com/weedos-project/manifest/blob/13_test/weedos.png">
+</p>
+
 ### Sync ###
 
 ```bash
+repo init --depth=1 --no-repo-verify -u https://github.com/weedos-project/manifest -b 13_test -g default,-mips,-darwin,-notdefault
+```
 
-# Initialize local repository
-repo init -u https://github.com/weedos-project/manifest -b 13_test
+**Sync up with this command:**
+```bash
+repo sync -c --no-clone-bundle --force-remove-dirty --optimized-fetch --prune --force-sync -j8
 
-# Sync
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+# --force-remove-dirty option can be used to remove previously used projects with uncommitted changes. (to prevent misc sync failures etc.)
+
 ```
 
 
@@ -22,10 +29,10 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 $ source build/envsetup.sh
 
 # Choose a target
-$ lunch aosp_$device-userdebug
+$ lunch weedos_$device-userdebug
 
 # Build the code
-$ make bacon -jX
+$ make bacon
 ```
 
 Credits
