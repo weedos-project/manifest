@@ -73,6 +73,7 @@
   <project path="device/qcom/sepolicy" name="weedos-project/platform_device_qcom_sepolicy" remote="weedos" />
   <project path="device/qcom/sepolicy-legacy-um" name="weedos-project/platform_device_qcom_sepolicy-legacy-um" remote="weedos" />
   <project path="device/qcom/sepolicy_vndr" name="weedos-project/platform_qcom_sepolicy_vndr" remote="weedos" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="weedos-project/platform_device_qcom_sepolicy_vndr-legacy-um" remote="weedos" />
   <project path="external/arm-optimized-routines" name="weedos-project/external_arm-optimized-routines" remote="weedos" />
   <project path="external/freetype" name="weedos-project/external_freetype" remote="weedos" />
   <project path="external/giflib" name="weedos-project/external_giflib" remote="weedos" />
