@@ -107,7 +107,7 @@
   <project path="hardware/interfaces" name="weedos-project/platform_hardware_interfaces" remote="weedos" />
   <project path="hardware/libhardware" name="weedos-project/hardware_libhardware" remote="weedos" />
   <project path="hardware/qcom-caf/wlan" name="weedos-project/hardware_qcom-caf_wlan" remote="weedos" />
-  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="weedos" />
+  <project path="hardware/xiaomi" name="weedos-project/hardware_xiaomi" remote="weedos" />
 
   <project path="libcore" name="weedos-project/platform_libcore" remote="weedos" />
 
