@@ -32,7 +32,7 @@
            revision="refs/heads/tortilla" />
            
     <remote  name="weedos"
-           fetch="ssh://git@github.com/"
+           fetch="ssh://git@github.com/weedos-project"
            sync-c="true"
            sync-j="4"
            revision="refs/heads/13" />  
@@ -48,13 +48,13 @@
   <!-- WeedOS additions -->
 
 
-  <project path="art" name="weedos-project/platform_art" remote="weedos" />
+  <project path="art" name="platform_art" remote="weedos" />
 
-  <project path="bionic" name="weedos-project/platform_bionic" remote="weedos" />
+  <project path="bionic" name="platform_bionic" remote="weedos" />
 
-  <project path="bootable/recovery" name="weedos-project/platform_bootable_recovery" remote="weedos" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="weedos" />
 
-  <project path="build/make" name="weedos-project/platform_build" remote="weedos" >
+  <project path="build/make" name="platform_build" remote="weedos" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -64,103 +64,103 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <project path="build/soong" name="weedos-project/platform_build_soong" remote="weedos" >
+  <project path="build/soong" name="platform_build_soong" remote="weedos" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <project path="device/weedos/sepolicy" name="weedos-project/platform_device_weedos_sepolicy" remote="weedos" />
-  <project path="device/qcom/sepolicy" name="weedos-project/platform_device_qcom_sepolicy" remote="weedos" />
-  <project path="device/qcom/sepolicy-legacy-um" name="weedos-project/platform_device_qcom_sepolicy-legacy-um" remote="weedos" />
-  <project path="device/qcom/sepolicy_vndr" name="weedos-project/platform_qcom_sepolicy_vndr" remote="weedos" />
-  <project path="device/qcom/sepolicy_vndr-legacy-um" name="weedos-project/platform_device_qcom_sepolicy_vndr-legacy-um" remote="weedos" />
-  <project path="external/arm-optimized-routines" name="weedos-project/external_arm-optimized-routines" remote="weedos" />
-  <project path="external/freetype" name="weedos-project/external_freetype" remote="weedos" />
-  <project path="external/giflib" name="weedos-project/external_giflib" remote="weedos" />
-  <project path="external/harfbuzz_ng" name="weedos-project/external_harfbuzz_ng" remote="weedos" />
-  <project path="external/jemalloc_new" name="weedos-project/android_external_jemalloc-new" remote="weedos" />
-  <project path="external/libjpeg-turbo" name="weedos-project/external_libjpeg-turbo" remote="weedos" />
-  <project path="external/OpenCSD" name="weedos-project/external_OpenCSD" remote="weedos" />
-  <project path="external/setupcompat" name="weedos-project/external_setupcompat" remote="weedos" />
-  <project path="external/sqlite" name="weedos-project/external_sqlite" remote="weedos" />
-  <project path="external/libvpx" name="weedos-project/external_libvpx" remote="weedos" />
-  <project path="external/zlib" name="weedos-project/external_zlib" remote="weedos" />
-  <project path="external/tinyxml" name="weedos-project/platform_external_tinyxml" remote="weedos" />
-  <project path="external/tinycompress" name="weedos-project/external_tinycompress" remote="weedos" />
-  <project path="external/faceunlock" name="weedos-project/external_faceunlock" remote="weedos" />
-  <project path="external/mksh " name="weedos-project/platform_external_mksh" remote="weedos" />
-  <project path="external/e2fsprogs" name="weedos-project/platform_external_e2fsprogs" remote="weedos" />
-  <project path="external/gptfdisk" name="weedos-project/platform_external_gptfdisk" remote="weedos" />
+  <project path="device/weedos/sepolicy" name="platform_device_weedos_sepolicy" remote="weedos" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="weedos" />
+  <project path="device/qcom/sepolicy-legacy-um" name="platform_device_qcom_sepolicy-legacy-um" remote="weedos" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_qcom_sepolicy_vndr" remote="weedos" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="platform_device_qcom_sepolicy_vndr-legacy-um" remote="weedos" />
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="weedos" />
+  <project path="external/freetype" name="external_freetype" remote="weedos" />
+  <project path="external/giflib" name="external_giflib" remote="weedos" />
+  <project path="external/harfbuzz_ng" name="external_harfbuzz_ng" remote="weedos" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="weedos" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="weedos" />
+  <project path="external/OpenCSD" name="external_OpenCSD" remote="weedos" />
+  <project path="external/setupcompat" name="external_setupcompat" remote="weedos" />
+  <project path="external/sqlite" name="external_sqlite" remote="weedos" />
+  <project path="external/libvpx" name="external_libvpx" remote="weedos" />
+  <project path="external/zlib" name="external_zlib" remote="weedos" />
+  <project path="external/tinyxml" name="platform_external_tinyxml" remote="weedos" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="weedos" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="weedos" />
+  <project path="external/mksh " name="platform_external_mksh" remote="weedos" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="weedos" />
+  <project path="external/gptfdisk" name="platform_external_gptfdisk" remote="weedos" />
   <project path="external/colorkt" name="ProtonAOSP/android_external_colorkt" remote="github" revision="sc-qpr3" />
   <project path="external/themelib" name="ProtonAOSP/android_external_themelib" remote="github" revision="sc-qpr3" />
-  <project path="external/AndroidSystemBlur" name="weedos-project/AndroidSystemBlur" remote="weedos" revision="main" />
+  <project path="external/AndroidSystemBlur" name="AndroidSystemBlur" remote="weedos" revision="main" />
   <project path="external/dwarves" name="platform/external/dwarves" remote="aosp" revision="3c8f7e8b2cf7ff902b71c42d00fda30f30114b07" />
   
-  <project path="frameworks/av" name="weedos-project/platform_frameworks_av" remote="weedos" />
-  <project path="frameworks/base" name="weedos-project/platform_frameworks_base" remote="weedos" />
-  <project path="frameworks/libs/net" name="weedos-project/android_frameworks_libs_net" remote="weedos" />
-  <project path="frameworks/libs/systemui" name="weedos-project/platform_frameworks_libs_systemui" remote="weedos" />
-  <project path="frameworks/native" name="weedos-project/platform_frameworks_native" remote="weedos" />
-  <project path="frameworks/opt/net/ims" name="weedos-project/android_frameworks_opt_net_ims" remote="weedos" />
-  <project path="frameworks/opt/telephony" name="weedos-project/frameworks_opt_telephony" remote="weedos" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="weedos" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="weedos" />
+  <project path="frameworks/libs/net" name="android_frameworks_libs_net" remote="weedos" />
+  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" remote="weedos" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="weedos" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="weedos" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="weedos" />
 
-  <project path="hardware/interfaces" name="weedos-project/platform_hardware_interfaces" remote="weedos" />
-  <project path="hardware/libhardware" name="weedos-project/hardware_libhardware" remote="weedos" />
-  <project path="hardware/qcom-caf/wlan" name="weedos-project/hardware_qcom-caf_wlan" remote="weedos" />
-  <project path="hardware/xiaomi" name="weedos-project/hardware_xiaomi" remote="weedos" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="weedos" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="weedos" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="weedos" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="weedos" />
 
-  <project path="libcore" name="weedos-project/platform_libcore" remote="weedos" />
+  <project path="libcore" name="platform_libcore" remote="weedos" />
 
 
 
 
   
-  <project path="packages/apps/Contacts" name="weedos-project/platform_packages_apps_Contacts" remote="weedos" />
-  <project path="packages/apps/WeedSettings" name="weedos-project/packages_apps_weedsettings" remote="weedos" />
-  <project path="packages/apps/DeskClock" name="weedos-project/packages_apps_DeskClock" remote="weedos" />
-  <project path="packages/apps/Dialer" name="weedos-project/platform_packages_apps_Dialer" remote="weedos" />
-  <project path="packages/apps/Launcher3" name="weedos-project/platform_packages_apps_Launcher3" remote="weedos" />
-  <project path="packages/apps/Messaging" name="weedos-project/platform_packages_apps_Messaging" remote="weedos" />
-  <project path="packages/apps/Nfc" name="weedos-project/android_packages_apps_Nfc" remote="weedos" />
-  <project path="packages/apps/Settings" name="weedos-project/platform_packages_apps_Settings" remote="weedos" />
-  <project path="packages/apps/ThemePicker" name="weedos-project/platform_packages_apps_ThemePicker" remote="weedos" />
-  <project path="packages/apps/WallpaperPicker2" name="weedos-project/packages_apps_WallpaperPicker2" remote="weedos" />
-  <project path="packages/apps/FaceUnlockService" name="weedos-project/packages_apps_FaceUnlockService" remote="weedos" />
-  <project path="packages/modules/Connectivity" name="weedos-project/platform_packages_modules_Connectivity" remote="weedos" />
-  <project path="packages/modules/Permission" name="weedos-project/platform_packages_modules_Permission" remote="weedos" />
-  <project path="packages/modules/Wifi" name="weedos-project/platform_packages_modules_Wifi" remote="weedos" />
-  <project path="packages/modules/Bluetooth" name="weedos-project/platform_packages_modules_Bluetooth" remote="weedos" />
-  <project path="packages/modules/adb" name="weedos-project/platform_packages_modules_adb" remote="weedos" />
-    <project path="packages/modules/common" name="weedos-project/platform_packages_modules_common" remote="weedos" />
-  <project path="packages/services/Telecomm" name="weedos-project/platform_packages_services_Telecomm" remote="weedos" />
-  <project path="packages/services/Telephony" name="weedos-project/platform_packages_services_Telephony" remote="weedos" />
+  <project path="packages/apps/Contacts" name="platform_packages_apps_Contacts" remote="weedos" />
+  <project path="packages/apps/WeedSettings" name="packages_apps_weedsettings" remote="weedos" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="weedos" />
+  <project path="packages/apps/Dialer" name="platform_packages_apps_Dialer" remote="weedos" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="weedos" />
+  <project path="packages/apps/Messaging" name="platform_packages_apps_Messaging" remote="weedos" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="weedos" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="weedos" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="weedos" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="weedos" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="weedos" />
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="weedos" />
+  <project path="packages/modules/Permission" name="platform_packages_modules_Permission" remote="weedos" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="weedos" />
+  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="weedos" />
+  <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="weedos" />
+    <project path="packages/modules/common" name="platform_packages_modules_common" remote="weedos" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="weedos" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="weedos" />
 
- <project path="packages/providers/DownloadProvider" name="weedos-project/packages_providers_DownloadProvider" remote="weedos" />
-  <project path="packages/providers/MediaProvider" name="weedos-project/packages_providers_MediaProvider" remote="weedos" />
-    <project path="packages/resources/devicesettings" name="weedos-project/platform_packages_resources_devicesettings" remote="weedos" />
+ <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="weedos" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="weedos" />
+    <project path="packages/resources/devicesettings" name="platform_packages_resources_devicesettings" remote="weedos" />
 
-  <project path="prebuilts/abi-dumps/ndk" name="weedos-project/prebuilts_abi-dumps_ndk" remote="weedos" />
-  <project path="prebuilts/abi-dumps/vndk" name="weedos-project/prebuilts_abi-dumps_vndk" remote="weedos" />
-  <project path="prebuilts/tools-weedos" name="weedos-project/platform_prebuilts_tools-weedos" remote="weedos" />
-  <project path="prebuilts/build-tools" name="weedos-project/android_prebuilts_build-tools" clone-depth="1" remote="weedos" />
+  <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="weedos" />
+  <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="weedos" />
+  <project path="prebuilts/tools-weedos" name="platform_prebuilts_tools-weedos" remote="weedos" />
+  <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" clone-depth="1" remote="weedos" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="tequilaOS/platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="tequila" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="tequilaOS/platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="tequila" />
 
  
  
-  <project path="system/core" name="weedos-project/platform_system_core" remote="weedos" />
-  <project path="system/media" name="weedos-project/platform_system_media" remote="weedos" />
-  <project path="system/logging" name="weedos-project/platform_system_logging" remote="weedos" />
-  <project path="system/libhwbinder" name="weedos-project/platform_system_libhwbinder" remote="weedos" />
-  <project path="system/memory/lmkd" name="weedos-project/platform_system_memory_lmkd" remote="weedos" />
-  <project path="system/sepolicy" name="weedos-project/platform_system_sepolicy" remote="weedos" />
-  <project path="system/update_engine" name="weedos-project/platform_system_update_engine" remote="weedos" />
-  <project path="system/vold" name="weedos-project/platform_system_vold" remote="weedos" />
-  <project path="system/security" name="weedos-project/platform_system_security" remote="weedos" />
+  <project path="system/core" name="platform_system_core" remote="weedos" />
+  <project path="system/media" name="platform_system_media" remote="weedos" />
+  <project path="system/logging" name="platform_system_logging" remote="weedos" />
+  <project path="system/libhwbinder" name="platform_system_libhwbinder" remote="weedos" />
+  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" remote="weedos" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="weedos" />
+  <project path="system/update_engine" name="platform_system_update_engine" remote="weedos" />
+  <project path="system/vold" name="platform_system_vold" remote="weedos" />
+  <project path="system/security" name="platform_system_security" remote="weedos" />
 
 
-  <project path="vendor/weedos" name="weedos-project/platform_vendor_weed" remote="weedos" />
+  <project path="vendor/weedos" name="platform_vendor_weed" remote="weedos" />
     <project path="vendor/google/gms" name="platform_vendor_gms" remote="weedos-gitlab" />
   <project path="vendor/google/pixel" name="platform_vendor_google_pixel" remote="tequila-gitlab" />
-  <project path="vendor/qcom/opensource/healthd-ext" name="weedos-project/vendor_qcom_opensource_healthd-ext" remote="weedos" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="vendor_qcom_opensource_healthd-ext" remote="weedos" />
 </manifest>
