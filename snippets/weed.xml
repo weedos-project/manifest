@@ -126,6 +126,7 @@
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="weedos" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="weedos" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="weedos" />
+  <project path="packages/apps/ParallelSpace" name="packages_apps_ParallelSpace" remote="weedos" />
   <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="weedos" />
   <project path="packages/modules/Permission" name="platform_packages_modules_Permission" remote="weedos" />
   <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="weedos" />
